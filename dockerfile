@@ -4,6 +4,7 @@ MAINTAINER Kushal M K
 RUN apt-get update
 
 RUN apt-get install -y openssh-server
+RUN apt-get install xorg -y
 RUN mkdir /var/run/sshd
 
 RUN echo 'root:root' |chpasswd
